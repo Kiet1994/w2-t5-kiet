@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RevolvingWheel : MonoBehaviour
 {
@@ -53,7 +54,7 @@ public class RevolvingWheel : MonoBehaviour
                 TurnOn = false; // turn off luon dc update
                 items[1].SetActive(false);
                 a1 = false; // t?t ?i ?? không b? l?u to? ?? ? l?n b?m ti?m theo.// tr?ng thái luôn ???c update
-
+                SceneManager.LoadScene("Home", LoadSceneMode.Single); //
             }
 
             if (a2 == true && speedWheel > 60 && Stop >= round + 1)
